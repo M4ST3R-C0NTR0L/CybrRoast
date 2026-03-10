@@ -1,17 +1,17 @@
-# 🔥 site-roast
+# 🔥 CybrRoast
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PyPI version](https://badge.fury.io/py/site-roast.svg)](https://badge.fury.io/py/site-roast)
-[![GitHub stars](https://img.shields.io/github/stars/cybrflux/site-roast.svg?style=social&label=Star)](https://github.com/M4ST3R-C0NTR0L/site-roast)
+[![PyPI version](https://badge.fury.io/py/CybrRoast.svg)](https://badge.fury.io/py/CybrRoast)
+[![GitHub stars](https://img.shields.io/github/stars/M4ST3R-C0NTR0L/CybrRoast.svg?style=social&label=Star)](https://github.com/M4ST3R-C0NTR0L/CybrRoast)
 
 > **Roast any website's SEO, performance, and design with brutal honesty and actual technical scores.**
 > 
 > Think Gordon Ramsay meets web development. 🍳
 
-## ✨ What is site-roast?
+## ✨ What is CybrRoast?
 
-`site-roast` is a CLI tool that audits websites across 10 critical categories and delivers the results with **genuinely funny** commentary. No corporate cringe — just hard truths served with humor.
+`CybrRoast` is a CLI tool that audits websites across 10 critical categories and delivers the results with **genuinely funny** commentary. No corporate cringe — just hard truths served with humor.
 
 Perfect for:
 - Developers who want honest feedback
@@ -22,8 +22,8 @@ Perfect for:
 ## 🚀 Quick Start
 
 ```bash
-pip install site-roast
-site-roast https://example.com
+pip install CybrRoast
+CybrRoast https://example.com
 ```
 
 That's it. No API keys. No config files. Just pure roast energy.
@@ -162,14 +162,14 @@ https://github.com/M4ST3R-C0NTR0L
 ### From PyPI (Recommended)
 
 ```bash
-pip install site-roast
+pip install CybrRoast
 ```
 
 ### From Source
 
 ```bash
-git clone https://github.com/M4ST3R-C0NTR0L/site-roast.git
-cd site-roast
+git clone https://github.com/M4ST3R-C0NTR0L/CybrRoast.git
+cd CybrRoast
 pip install -e .
 ```
 
@@ -179,25 +179,25 @@ pip install -e .
 
 ```bash
 # Roast a website
-site-roast https://example.com
+CybrRoast https://example.com
 
 # Output as JSON
-site-roast https://example.com --json
+CybrRoast https://example.com --json
 
 # Generate Markdown report
-site-roast https://example.com --markdown --output report.md
+CybrRoast https://example.com --markdown --output report.md
 
 # Serious mode (no jokes)
-site-roast https://example.com --no-roast
+CybrRoast https://example.com --no-roast
 
 # Verbose with recommendations
-site-roast https://example.com --verbose
+CybrRoast https://example.com --verbose
 ```
 
 ### All Options
 
 ```
-usage: site-roast [-h] [--version] [--json] [--markdown] [--no-roast] 
+usage: CybrRoast [-h] [--version] [--json] [--markdown] [--no-roast] 
                   [--verbose] [--timeout TIMEOUT] [--user-agent USER_AGENT] 
                   [--output OUTPUT]
                   url
@@ -256,7 +256,7 @@ Each category is scored 0-100 based on:
 
 ```bash
 # Fail build if score is below 70
-site-roast https://example.com --json | jq '.overall_score' | xargs -I {} sh -c '[ {} -ge 70 ] || exit 1'
+CybrRoast https://example.com --json | jq '.overall_score' | xargs -I {} sh -c '[ {} -ge 70 ] || exit 1'
 ```
 
 ### Batch Auditing
@@ -264,7 +264,7 @@ site-roast https://example.com --json | jq '.overall_score' | xargs -I {} sh -c 
 ```bash
 # Audit multiple sites
 for url in site1.com site2.com site3.com; do
-    site-roast "https://$url" --markdown --output "reports/$url.md"
+    CybrRoast "https://$url" --markdown --output "reports/$url.md"
 done
 ```
 
@@ -272,7 +272,7 @@ done
 
 ```bash
 # Get JSON for programmatic use
-site-roast https://example.com --json | jq '.categories.title.score'
+CybrRoast https://example.com --json | jq '.categories.title.score'
 # Output: 45
 ```
 
@@ -281,7 +281,7 @@ site-roast https://example.com --json | jq '.categories.title.score'
 We love contributions! Here's how to get started:
 
 1. **Fork** the repository
-2. **Clone** your fork: `git clone https://github.com/your-username/site-roast.git`
+2. **Clone** your fork: `git clone https://github.com/your-username/CybrRoast.git`
 3. **Install dev dependencies**: `pip install -e ".[dev]"`
 4. **Create a branch**: `git checkout -b feature/amazing-feature`
 5. **Make your changes** and add tests
@@ -294,8 +294,8 @@ We love contributions! Here's how to get started:
 
 ```bash
 # Clone and setup
-git clone https://github.com/M4ST3R-C0NTR0L/site-roast.git
-cd site-roast
+git clone https://github.com/M4ST3R-C0NTR0L/CybrRoast.git
+cd CybrRoast
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -e ".[dev]"
