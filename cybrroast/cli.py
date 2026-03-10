@@ -1,5 +1,5 @@
 """
-CLI interface for site-roast.
+CLI interface for CybrRoast.
 
 Handles argument parsing, validation, and orchestrates the audit flow.
 """
@@ -16,15 +16,15 @@ from .reporter import TerminalReporter, MarkdownReporter, JsonReporter
 def create_parser() -> argparse.ArgumentParser:
     """Create and configure the argument parser."""
     parser = argparse.ArgumentParser(
-        prog="site-roast",
+        prog="CybrRoast",
         description="🔥 Roast any website's SEO, performance, and design.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  site-roast https://example.com
-  site-roast https://example.com --json
-  site-roast https://example.com --markdown --verbose
-  site-roast https://example.com --no-roast --json > report.json
+  CybrRoast https://example.com
+  CybrRoast https://example.com --json
+  CybrRoast https://example.com --markdown --verbose
+  CybrRoast https://example.com --no-roast --json > report.json
         """,
     )
 

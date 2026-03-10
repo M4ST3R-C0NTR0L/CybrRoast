@@ -1,5 +1,5 @@
 """
-site-roast: A brutal, funny website auditor.
+CybrRoast: A brutal, funny website auditor.
 
 Roast any website's SEO, performance, and design with actual technical scores.
 Think Gordon Ramsay meets web development.

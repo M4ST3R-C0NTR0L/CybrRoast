@@ -1,14 +1,14 @@
 """
-Tests for site-roast.
+Tests for CybrRoast.
 
 Run with: pytest
 """
 
 import pytest
-from site_roast.auditor import AuditResult, WebsiteAuditor
-from site_roast.roaster import Roaster
-from site_roast.reporter import TerminalReporter, MarkdownReporter, JsonReporter
-from site_roast.scores import ScoreCalculator, ScoreThresholds
+from cybrroast.auditor import AuditResult, WebsiteAuditor
+from cybrroast.roaster import Roaster
+from cybrroast.reporter import TerminalReporter, MarkdownReporter, JsonReporter
+from cybrroast.scores import ScoreCalculator, ScoreThresholds
 
 
 class TestAuditResult:

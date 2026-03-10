@@ -304,18 +304,18 @@ pip install -e ".[dev]"
 pytest
 
 # Run with coverage
-pytest --cov=site_roast
+pytest --cov=cybrroast
 
 # Format code
-black site_roast/
+black cybrroast/
 
 # Type checking
-mypy site_roast/
+mypy cybrroast/
 ```
 
 ### Adding New Roast Comments
 
-Want to make the roasts even funnier? Edit `site_roast/roaster.py` and add your best burns to the appropriate score range lists. Keep it:
+Want to make the roasts even funnier? Edit `cybrroast/roaster.py` and add your best burns to the appropriate score range lists. Keep it:
 - Actually funny (no dad jokes)
 - Constructive (roast + inform)
 - Original

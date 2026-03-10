@@ -3,9 +3,9 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "site-roast"
+name = "CybrRoast"
 version = "1.0.0"
-description = "🔥 Roast any website's SEO, performance, and design. Think Gordon Ramsay meets web development."
+description = "🔥 Roast any website's SEO, performance, and design with brutal honesty and actual technical scores."
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.8"
@@ -47,18 +47,17 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/cybrflux/site-roast"
-Documentation = "https://github.com/cybrflux/site-roast#readme"
-Repository = "https://github.com/cybrflux/site-roast"
-Issues = "https://github.com/cybrflux/site-roast/issues"
-Changelog = "https://github.com/cybrflux/site-roast/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/M4ST3R-C0NTR0L/CybrRoast"
+Documentation = "https://github.com/M4ST3R-C0NTR0L/CybrRoast#readme"
+Repository = "https://github.com/M4ST3R-C0NTR0L/CybrRoast"
+Issues = "https://github.com/M4ST3R-C0NTR0L/CybrRoast/issues"
 
 [project.scripts]
-site-roast = "site_roast.cli:main"
+CybrRoast = "cybrroast.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["site_roast*"]
+include = ["cybrroast*"]
 
 [tool.black]
 line-length = 100
