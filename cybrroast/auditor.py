@@ -14,6 +14,8 @@ from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 
+from .url_guard import validate_url
+
 
 @dataclass
 class AuditResult:
@@ -137,7 +139,11 @@ class WebsiteAuditor:
             WebsiteAudit containing all results.
         """
         start_time = time.time()
-        
+
+        # SSRF guard: reject internal/private/loopback/link-local targets
+        # before any network request is made.
+        validate_url(url)
+
         # Fetch the page
         response = self.session.get(url, timeout=self.timeout)
         response.raise_for_status()
